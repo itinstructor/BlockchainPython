@@ -1,6 +1,6 @@
-# Blockchain Tutorial with Python
+# Blockchain Tutorial using Python
 
-Blockchain tutorial with Python
+Blockchain tutorial using Python
 
 ### About Me
 

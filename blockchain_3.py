@@ -1,0 +1,53 @@
+"""
+    Name: blockchain_3.py
+    Author: 
+    Created: 02/10/2024
+    Purpose: Demonstrate how blockchain works in Python
+"""
+# Python hashing library
+import hashlib
+
+
+# --------------------------- BIT HASH ------------------------------------ #
+def bit_hash(data):
+
+    # Convert the input data to a string
+    string_data = str(data)
+
+    # Encode the string data into bytes using UTF-8
+    formatted_data = string_data.encode('utf-8')
+
+    # Compute the SHA-256 hash of the formatted data
+    # Convert it to a hexadecimal representation
+    bit_hash = hashlib.sha256(formatted_data).hexdigest()
+
+    # Return the resulting hexadecimal hash
+    return bit_hash
+
+
+# Start with a basic block
+# Define a transaction where Wallet 1 pays 1 bitcoin to Wallet 2
+transaction_1 = "Wallet 1 paid 1 bitcoin to Wallet 2"
+
+# Create a genesis block hash containing the transaction hash
+genesis_block_hash = bit_hash((0, transaction_1))
+
+# Print the contents of the genesis block
+print(genesis_block_hash)
+
+# Recreate the genesis block - this time with hashes for our chain
+genesis_block = (0, transaction_1, genesis_block_hash)
+
+# Print the complete genisis block
+print(genesis_block)
+
+# Create the transaction for block 2
+transaction_2 = "Wallet#1 paid 2 bitcoin to Wallet#2"
+
+# Create the block 2 hash which combines the previous hash
+block_2_hash = bit_hash((genesis_block_hash, transaction_2))
+
+# The block now holds all the transactions details and hash chains
+block_2 = (genesis_block_hash, transaction_2, block_2_hash)
+
+print(block_2)
