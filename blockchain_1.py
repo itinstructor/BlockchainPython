@@ -2,7 +2,7 @@
     Name: blockchain_1.py
     Author: 
     Created: 02/10/2024
-    Purpose: Demonstrate how blockchain works in Python
+    Purpose: Demonstrate blockchain in Python
 """
 
 # Start with a basic block

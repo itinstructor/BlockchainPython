@@ -2,24 +2,26 @@
     Name: blockchain_2.py
     Author: 
     Created: 02/10/2024
-    Purpose: Demonstrate how blockchain works in Python
+    Purpose: Demonstrate blockchain in Python
 """
 # Python hashing library
 import hashlib
 
 
-# -------------------- BIT HASH --------------------------------------------#
+# --------------------------- BIT HASH ------------------------------------ #
 def bit_hash(data):
 
     # Convert the input data to a string
     string_data = str(data)
 
-    # Encode the string data into bytes using UTF-8
+    # Encode the string data into bytes using UTF-8 text encoding
     formatted_data = string_data.encode('utf-8')
 
     # Compute the SHA-256 hash of the formatted data
+    bit_hash = hashlib.sha256(formatted_data)
+
     # Convert it to a hexadecimal representation
-    bit_hash = hashlib.sha256(formatted_data).hexdigest()
+    bit_hash = bit_hash.hexdigest()
 
     # Return the resulting hexadecimal hash
     return bit_hash
