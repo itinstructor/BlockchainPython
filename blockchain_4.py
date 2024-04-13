@@ -52,6 +52,7 @@ genesis_block = create_block(0, -1, "Wallet 1 paid 1 bitcoin to Wallet 2")
 # Print the details of the genesis block
 print("Genisys Block:")
 print(genesis_block)
+print()
 
 # Initialize the prior_block variable with the genesis block for the loop
 prior_block = genesis_block
@@ -73,6 +74,6 @@ for i in range(3):
 
     # Print the details of the newly generated block
     print(next_block)
-
+    print()
     # Update the prior_block variable for the next iteration
     prior_block = next_block
