@@ -1,12 +1,15 @@
 # Blockchain Tutorial using Python
 
-Blockchain tutorial using Python
+Blockchain tutorial using Python. Blockchain technology is the foundation of Cryptocurrency.
 
 ### About Me
 
 I am an Information Technology Instructor at [Western Nebraska Community College](https://www.wncc.edu). I teach Information Technology, CyberSecurity and Computer Science. Best job ever!
 
-Visit our Facebook page: [Facebook WNCC IT Program](https://www.facebook.com/wnccitprogram/)
+This is a collection of PyGame tutorials for my Computer Science classes at Western Nebraska Community College.
+
+- Facebook: [Facebook WNCC IT Program](https://www.facebook.com/wnccitprogram/)
+- YouTube: [YouTube WINCC IT Program](https://www.youtube.com/@williamloringitinstructor)
 
 ### License
 
