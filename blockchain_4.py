@@ -67,9 +67,9 @@ def main():
     # Prior block hash is set to "0" to represent the initial state
     # Numbering starts at -1 to represent initial state before the first block
     genesis_block = create_block(
-        "0",
-        -1,
-        "Wallet 1 paid 1 bitcoin to Wallet 2"
+        "0",    # Prior block hash
+        -1,     # Prior block number
+        "Wallet 1 paid 1 bitcoin to Wallet 2"  # Transaction data
     )
 
     # Print the details of the genesis block
